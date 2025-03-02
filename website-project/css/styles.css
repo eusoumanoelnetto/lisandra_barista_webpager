@@ -1,0 +1,84 @@
+body {
+    background-color: #f5f5f5; /* Light nude background */
+    color: #333; /* Dark text for readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4e3b31; /* Brown header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+.about, .experience, .skills {
+    background-color: white; /* White sections for content */
+    border: 1px solid #ccc; /* Light border for separation */
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+h2 {
+    color: #4e3b31; /* Brown for section titles */
+}
+
+.profile-pic {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Circular profile picture */
+}
+
+.linkedin-btn {
+    background-color: #4e3b31; /* Brown button */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.linkedin-btn:hover {
+    background-color: #3b2a24; /* Darker brown on hover */
+}
+
+.skills ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.skills li {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #d9c6b2; /* Nude button */
+    border: none;
+    color: #4e3b31; /* Brown text */
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c6b2a0; /* Darker nude on hover */
+}
+
+footer {
+    background-color: #4e3b31; /* Brown footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

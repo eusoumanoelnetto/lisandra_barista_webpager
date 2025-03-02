@@ -1,0 +1,253 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('assets/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.8);
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a.sign-up {
+    background-color: #ff6600;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.linkedin-btn {
+    background: #0077b5;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.linkedin-btn:hover {
+    background: #005582;
+}
+
+main {
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.content {
+    flex: 1;
+    margin-right: 2rem;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.content p {
+    margin: 10px 0;
+}
+
+.btn {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.illustration img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about, .skills, .experience, section[id] {
+    background: rgba(51, 51, 51, 0.8);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-pic {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.skills ul, .experience ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li, .experience li {
+    margin: 0.5rem 0;
+}
+
+.skills button {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.skills button:hover {
+    background: #e65c00;
+}
+
+footer {
+    background-color: #8B4513; /* Cor marrom */
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: #fff; /* Cor do texto */
+}
+
+footer img {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.credits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.manu-gif {
+    width: 50px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.manu-gif-inline {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.character {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.character img {
+    width: 100px;
+    height: auto;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .content {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        position: static;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .content h1 {
+        font-size: 2em;
+    }
+
+    .btn {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+
+    .skills button {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    .character img {
+        width: 80px;
+    }
+}
